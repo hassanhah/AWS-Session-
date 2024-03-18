@@ -58,8 +58,8 @@
 
 2. **Set up the following environment variables in a `.env` file:**
     ```plaintext
-    DOMAIN="http://18.232.138.141"
-    PORT=8000
+    DOMAIN=""
+    PORT=
     STATIC_DIR="./client"
     PUBLISHABLE_KEY=""
     SECRET_KEY=""
