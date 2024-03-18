@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const { resolve } = require("path");
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8000; // Change port to 8000
 
 // importing the dotenv module to use environment variables:
 require("dotenv").config();
@@ -52,7 +52,7 @@ app.get("/workshop3", (req, res) => {
 
 // ____________________________________________________________________________________
 
-const domainURL = process.env.DOMAIN;
+const domainURL = "http://18.232.138.141"; // Change localhost to IP address
 app.post("/create-checkout-session/:pid", async (req, res) => {
   
   const priceId = req.params.pid;
@@ -79,5 +79,6 @@ app.post("/create-checkout-session/:pid", async (req, res) => {
 // Server listening:
 app.listen(port, () => {
   console.log(`Server listening on port: ${port}`);
-  console.log(`You may access you app at: ${domainURL}`);
+  console.log(`You may access your app at: ${domainURL}`);
 });
+
